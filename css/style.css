@@ -2,5 +2,20 @@
 Name: 			style.scss
 Written by: 	Ahmed Osama Bedawy - (https://github.com/ahmeddoosama)
 */
+/* ========== Contain navbar style ========== */
+/* Colors */
+/* ========== Navbar ========== */
+.main-nav .navbar-brand {
+  color: #DC143C;
+}
+.main-nav .navbar-collapse {
+  flex-grow: 0;
+}
+.main-nav .navbar-collapse .navbar-nav .active .nav-link {
+  color: #DC143C;
+}
+.main-nav .navbar-collapse .navbar-nav .nav-link:hover, .main-nav .navbar-collapse .navbar-nav .nav-link:focus {
+  color: #DC143C;
+}
 
 /*# sourceMappingURL=style.css.map */

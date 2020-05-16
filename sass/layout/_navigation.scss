@@ -1,0 +1,25 @@
+/* ========== Contain navbar style ========== */
+@import '../partials/variables';
+@import '../partials/colors';
+
+/* ========== Navbar ========== */
+.main-nav {
+    .navbar-brand {
+        color: $mainColor;
+    }
+    .navbar-collapse{
+        flex-grow: 0;
+
+        .navbar-nav {
+            .active {
+                .nav-link {
+                    color: $mainColor;
+                }
+            }
+            .nav-link {
+                &:hover,
+                &:focus {color: $mainColor;}
+            }
+        }
+    }
+}
