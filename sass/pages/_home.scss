@@ -1,0 +1,19 @@
+/* ========== Contain Home style ========== */
+@import '../partials/variables';
+@import '../partials/colors';
+
+
+main {
+    > section {
+        padding: $padding-all-section;
+        text-align: $text-align-center;
+    }
+
+    .about {
+        background-color: $whitesmoke;
+        img {
+            height: 90px;
+            margin-bottom: 20px;
+        }
+    }
+}

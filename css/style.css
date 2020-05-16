@@ -35,6 +35,18 @@ img {
   max-width: 100%;
 }
 
+.paragraph {
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.title {
+  color: #595C61;
+  font-weight: 600;
+  font-size: 22px;
+}
+
 /* Colors */
 /* Colors */
 .btn {
@@ -96,6 +108,21 @@ img {
 .main-header .carousel .carousel-item .carousel-caption h1 {
   font-size: 55px;
   line-height: 1.9;
+}
+
+/* ========== Contain Home style ========== */
+/* Colors */
+/* Colors */
+main > section {
+  padding: 60px 0;
+  text-align: center;
+}
+main .about {
+  background-color: #F5F5F5;
+}
+main .about img {
+  height: 90px;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

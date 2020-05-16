@@ -34,3 +34,17 @@ body {
 img {
     max-width: 100%;
 }
+
+// Paragraph
+.paragraph {
+    font-size: $paragraph-font-size;
+    line-height: $paragraph-line-height;
+    font-weight: $font-weight-400;
+}
+
+// Titles
+.title {
+    color: $gray;
+    font-weight: $font-weight-600;
+    font-size: $font-size-box-title;
+}

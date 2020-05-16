@@ -10,6 +10,11 @@ $text-align-center: center;
 
 // title
 $font-size-title: 55px;
+$font-size-box-title: 22px;
+
+// Paragraph
+$paragraph-line-height: 1.7;
+$paragraph-font-size: 14px;
 
 // Body
 $font-size-body: 15px;
@@ -25,3 +30,7 @@ $font-size-about-btn-mobile: 19px;
 $font-weight-btn:700;
 $padding-btn-down: 9px 30px;
 $transition-btn:all 0.3s ease-in-out;
+
+
+// Sections
+$padding-all-section: 60px 0;
