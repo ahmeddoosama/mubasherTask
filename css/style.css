@@ -41,10 +41,17 @@ img {
   font-weight: 400;
 }
 
+.heading {
+  font-size: 35px;
+  font-weight: 700;
+  color: #595C61;
+  margin-bottom: 45px;
+}
+
 .title {
   color: #595C61;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 /* Colors */
@@ -113,6 +120,10 @@ img {
 /* ========== Contain Home style ========== */
 /* Colors */
 /* Colors */
+main {
+  /* ========== About Section ========== */
+  /* ========== services Section ========== */
+}
 main > section {
   padding: 60px 0;
   text-align: center;
@@ -123,6 +134,18 @@ main .about {
 main .about img {
   height: 90px;
   margin-bottom: 20px;
+}
+main .our-services .service-card {
+  text-align: start;
+  position: relative;
+}
+main .our-services .service-card .services-icon {
+  position: absolute;
+  font-size: 25px;
+  color: #EB586F;
+}
+main .our-services .service-card .content {
+  margin-left: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

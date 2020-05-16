@@ -43,6 +43,14 @@ img {
 }
 
 // Titles
+
+.heading {
+    font-size: $font-size-big-title;
+    font-weight: $font-weight-700;
+    color: $gray;
+    margin-bottom: 45px;
+}
+
 .title {
     color: $gray;
     font-weight: $font-weight-600;

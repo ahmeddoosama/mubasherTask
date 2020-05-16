@@ -9,11 +9,28 @@ main {
         text-align: $text-align-center;
     }
 
+    /* ========== About Section ========== */
     .about {
         background-color: $whitesmoke;
         img {
             height: 90px;
             margin-bottom: 20px;
+        }
+    }
+
+    /* ========== services Section ========== */
+    .our-services {
+        .service-card {
+            text-align: start;
+            position: relative;
+            .services-icon {
+                position: absolute;
+                font-size: 25px;
+                color: $mainColor;
+            }
+            .content {
+                margin-left: 40px;
+            }
         }
     }
 }
