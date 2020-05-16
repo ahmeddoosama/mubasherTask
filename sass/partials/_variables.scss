@@ -1,8 +1,27 @@
+// desc: 'Contain all website initial values for sections and headlines and divs and main inheritance for others'
+@import "../partials/colors";
+
+
 // All
 $font-weight-400: 400;
 $font-weight-700: 700;
 $font-weight-600: 600;
 $text-align-center: center;
 
+// title
+$font-size-title: 55px;
+
 // Body
 $font-size-body: 15px;
+
+
+// Button Varaibles
+$border-btn: 1px solid $mainColor;
+$border-raduis-btn:5px;
+
+$font-size-btn:16px;
+$font-size-about-btn: 23px;
+$font-size-about-btn-mobile: 19px;
+$font-weight-btn:700;
+$padding-btn-down: 9px 30px;
+$transition-btn:all 0.3s ease-in-out;

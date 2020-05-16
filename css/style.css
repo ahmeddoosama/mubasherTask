@@ -2,20 +2,100 @@
 Name: 			style.scss
 Written by: 	Ahmed Osama Bedawy - (https://github.com/ahmeddoosama)
 */
+/* Colors */
+/* Colors */
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Colors */
+/* Colors */
+.btn {
+  color: #EB586F;
+  background-color: unset;
+  border-radius: 0;
+  width: auto;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #EB586F;
+}
+.btn:hover {
+  color: #EB586F;
+  opacity: 0.5;
+}
+
+.btn-down {
+  margin-top: 20px;
+  padding: 9px 30px;
+}
+
 /* ========== Contain navbar style ========== */
 /* Colors */
+/* Colors */
 /* ========== Navbar ========== */
+.main-nav {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
 .main-nav .navbar-brand {
-  color: #DC143C;
+  color: #EB586F;
 }
 .main-nav .navbar-collapse {
   flex-grow: 0;
 }
 .main-nav .navbar-collapse .navbar-nav .active .nav-link {
-  color: #DC143C;
+  color: #EB586F;
+}
+.main-nav .navbar-collapse .navbar-nav .nav-link {
+  color: #FFF;
 }
 .main-nav .navbar-collapse .navbar-nav .nav-link:hover, .main-nav .navbar-collapse .navbar-nav .nav-link:focus {
-  color: #DC143C;
+  color: #EB586F;
+}
+
+/* ========== Contain navbar style ========== */
+/* Colors */
+/* Colors */
+/* ========== Header ========== */
+.main-header .carousel .carousel-item .carousel-caption {
+  top: 25%;
+  bottom: 0;
+}
+.main-header .carousel .carousel-item .carousel-caption h1 {
+  font-size: 55px;
+  line-height: 1.9;
 }
 
 /*# sourceMappingURL=style.css.map */

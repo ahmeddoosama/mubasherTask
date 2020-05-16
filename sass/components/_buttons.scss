@@ -1,0 +1,29 @@
+// desc: 'Contain buttons styles'
+
+// Button Variables
+@import '../partials/variables';
+@import '../partials/colors';
+
+
+// Button Style
+.btn {
+    color: $mainColor;
+    background-color: unset;
+    border-radius: 0;
+    width: auto;
+    outline: none;
+    cursor: pointer;
+    text-align: $text-align-center;
+    text-decoration: none;
+    display: inline-block;
+    border: $border-btn;
+    &:hover {
+        color: $mainColor;
+        opacity: .5;
+    }
+}
+
+.btn-down {
+    margin-top: 20px;
+    padding: $padding-btn-down;
+}

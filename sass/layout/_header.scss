@@ -1,0 +1,19 @@
+/* ========== Contain navbar style ========== */
+@import '../partials/variables';
+@import '../partials/colors';
+
+/* ========== Header ========== */
+.main-header {
+    .carousel {
+        .carousel-item {
+            .carousel-caption {
+                top: 25%;
+                bottom: 0;
+                h1 {
+                    font-size: $font-size-title;
+                    line-height: 1.9;
+                }
+            }
+        }
+    }
+}
