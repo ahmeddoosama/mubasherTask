@@ -33,4 +33,44 @@ main {
             }
         }
     }
+
+    /* ========== portfolio Section ========== */
+    .portfolio {
+        background-color: $whitesmoke;
+        .portfolio-nav {
+            margin-top: 40px;
+            margin-bottom: 50px;
+            .portfolio-nav-item {
+                border: 2px solid $mainColor;
+                cursor: pointer;
+                margin-left: 10px;
+                padding: 5px 0;
+                -webkit-transition: all .3s ease-in-out;
+                -moz-transition: all .3s ease-in-out;
+                -o-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out;
+                &:active,
+                &:hover {
+                    background-color: $mainColor;
+                    color: $white;
+                }
+            }
+        }
+        .shuffle-images {
+            .row {
+                margin: 0;
+                .col-md {
+                    padding: 0;
+                    -webkit-transition: all .5s ease-in-out;
+                    -moz-transition: all .5s ease-in-out;
+                    -o-transition: all .5s ease-in-out;
+                    transition: all .5s ease-in-out;
+                    img {
+                        height: 280px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
 }

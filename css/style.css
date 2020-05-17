@@ -123,6 +123,7 @@ img {
 main {
   /* ========== About Section ========== */
   /* ========== services Section ========== */
+  /* ========== portfolio Section ========== */
 }
 main > section {
   padding: 60px 0;
@@ -146,6 +147,41 @@ main .our-services .service-card .services-icon {
 }
 main .our-services .service-card .content {
   margin-left: 40px;
+}
+main .portfolio {
+  background-color: #F5F5F5;
+}
+main .portfolio .portfolio-nav {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+main .portfolio .portfolio-nav .portfolio-nav-item {
+  border: 2px solid #EB586F;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+main .portfolio .portfolio-nav .portfolio-nav-item:active, main .portfolio .portfolio-nav .portfolio-nav-item:hover {
+  background-color: #EB586F;
+  color: #FFF;
+}
+main .portfolio .shuffle-images .row {
+  margin: 0;
+}
+main .portfolio .shuffle-images .row .col-md {
+  padding: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+main .portfolio .shuffle-images .row .col-md img {
+  height: 280px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
