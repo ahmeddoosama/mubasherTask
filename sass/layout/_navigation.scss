@@ -28,14 +28,14 @@
         }
     }
 
-    
+
     // Small Devices
-    @media #{$extraSmall} {
+    @media #{$extraSmallDevices} {
         background-color: $dimgray;
     }
 
     // Medium Devices
-    @media #{$mediumScreen} {
+    @media #{$MediumDevices} {
         background-color: $dimgray;
     }
     

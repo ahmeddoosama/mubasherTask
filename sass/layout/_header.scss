@@ -17,7 +17,7 @@
         }
     }
     // Small Devices
-    @media #{$extraSmall} {
+    @media #{$extraSmallDevices} {
         position: relative;
         top: 54px;
         margin-bottom: 25px;
@@ -36,7 +36,7 @@
         }
     }
 
-    @media #{$mediumScreen} {
+    @media #{$MediumDevices} {
         .carousel {
             .carousel-item {
                 .carousel-caption {
