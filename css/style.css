@@ -20,6 +20,21 @@ body {
   font-family: Poppins, sans-serif;
 }
 
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .overlay {
   position: absolute;
   width: 100%;
@@ -126,6 +141,7 @@ main {
   /* ========== portfolio Section ========== */
   /* ========== statistics Section ========== */
   /* ========== Our Team Section ========== */
+  /* ========== Price Table Section ========== */
 }
 main > section {
   padding: 60px 0;
@@ -209,6 +225,40 @@ main .statistics .overlay {
 }
 main .our-team {
   background-color: #F5F5F5;
+}
+main .price-table .card {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(110, 110, 110, 0.2);
+  max-width: 30.333333%;
+  margin-right: 3%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+main .price-table .card h5,
+main .price-table .card h6,
+main .price-table .card ul > li {
+  margin-bottom: 30px;
+}
+main .price-table .card .card-body .card-subtitle {
+  font-size: 55px;
+  font-weight: 600;
+}
+main .price-table .card .card-body ul > li i {
+  margin-right: 5px;
+}
+main .price-table .card:hover {
+  background-color: #EB586F;
+  color: #FFF;
+}
+main .price-table .card:hover .title {
+  color: #FFF;
+}
+main .price-table .card:hover .btn-card {
+  background-color: #FFF;
+  color: #EB586F;
 }
 
 /*# sourceMappingURL=style.css.map */
