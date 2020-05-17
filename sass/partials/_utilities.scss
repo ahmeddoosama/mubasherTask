@@ -42,7 +42,7 @@ a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 // images
@@ -71,3 +71,15 @@ img {
     font-weight: $font-weight-600;
     font-size: $font-size-box-title;
 }
+
+// Animate
+[class^='imghvr-'], 
+[class*=' imghvr-'] {
+  background-color: $gray;
+}
+
+[class^='imghvr-'] figcaption, 
+[class*=' imghvr-'] figcaption  {
+  background-color: $dimgray !important;
+}
+

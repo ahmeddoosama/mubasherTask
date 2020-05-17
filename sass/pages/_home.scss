@@ -16,234 +16,359 @@ main {
             height: 90px;
             margin-bottom: 20px;
         }
+        .card-hover {
+            padding: 20px;
+            &:hover {
+                box-shadow: 0 5px 15px 0 rgba(110, 110, 110, 0);
+                -webkit-transition: all .3s ease-in-out;
+                -moz-transition: all .3s ease-in-out;
+                -o-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out;
+                box-shadow: 0 5px 15px 0 rgba(110, 110, 110, .4);
+            }
+        }
+        @media #{$extraSmallDevices} {
+            padding: 60px 10px 0 10px;;
+        }
     }
 
     /* ========== services Section ========== */
-    // .our-services,
-    // .feature {
-    //     .cards {
-    //         text-align: start;
-    //         position: relative;
-    //         .icons {
-    //             position: absolute;
-    //             font-size: 25px;
-    //             color: $mainColor;
-    //         }
-    //         .content {
-    //             margin-left: 40px;
-    //         }
-    //     }
-    // }
+    .our-services,
+    .feature {
+        .cards {
+            text-align: start;
+            position: relative;
+            padding: 15px;
+            .icons {
+                position: absolute;
+                font-size: 25px;
+                color: $mainColor;
+            }
+            .content {
+                margin-left: 40px;
+            }
+            &:hover {
+                box-shadow: 0 5px 15px 0 rgba(110, 110, 110, 0);
+                -webkit-transition: all .3s ease-in-out;
+                -moz-transition: all .3s ease-in-out;
+                -o-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out;
+                box-shadow: 0 5px 15px 0 rgba(110, 110, 110, .4);
+            }
+        }
+        @media #{$extraSmallDevices} {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
 
     /* ========== portfolio Section ========== */
-    // .portfolio {
-    //     background-color: $whitesmoke;
-    //     .portfolio-nav {
-    //         margin-top: 40px;
-    //         margin-bottom: 50px;
-    //         .portfolio-nav-item {
-    //             border: 2px solid $mainColor;
-    //             cursor: pointer;
-    //             margin-left: 10px;
-    //             padding: 5px 0;
-    //             -webkit-transition: all .3s ease-in-out;
-    //             -moz-transition: all .3s ease-in-out;
-    //             -o-transition: all .3s ease-in-out;
-    //             transition: all .3s ease-in-out;
-    //             &:active,
-    //             &:hover {
-    //                 background-color: $mainColor;
-    //                 color: $white;
-    //             }
-    //         }
-    //     }
-    //     .shuffle-images {
-    //         .row {
-    //             margin: 0;
-    //             .col-md {
-    //                 padding: 0;
-    //                 -webkit-transition: all .5s ease-in-out;
-    //                 -moz-transition: all .5s ease-in-out;
-    //                 -o-transition: all .5s ease-in-out;
-    //                 transition: all .5s ease-in-out;
-    //                 img {
-    //                     height: 280px;
-    //                     width: 100%;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
+    .portfolio {
+        background-color: $whitesmoke;
+        .portfolio-nav {
+            margin-top: 40px;
+            margin-bottom: 50px;
+            .portfolio-nav-item {
+                border: 2px solid $mainColor;
+                cursor: pointer;
+                margin-left: 10px;
+                padding: 5px 0;
+                -webkit-transition: all .3s ease-in-out;
+                -moz-transition: all .3s ease-in-out;
+                -o-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out;
+                &:active,
+                &:hover {
+                    background-color: $mainColor;
+                    color: $white;
+                }
+            }
+        }
+        .shuffle-images {
+            .row {
+                margin: 0;
+                .col-md {
+                    padding: 0;
+                    -webkit-transition: all .5s ease-in-out;
+                    -moz-transition: all .5s ease-in-out;
+                    -o-transition: all .5s ease-in-out;
+                    transition: all .5s ease-in-out;
+                    img {
+                        height: 280px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
 
     /* ========== statistics Section ========== */
-    // .statistics {
-    //     background: url('../../images/cover/HeroImage.jpg') no-repeat center center fixed;
-    //     background-size: cover;
-    //     min-height: 300px;
-    //     padding: 115px 0;
-    //     color: $white;
-    //     span {
-    //         font-size: 40px;
-    //         color: $mainColor;
-    //     }
-    //     .title {
-    //         font-size: 45px;
-    //         color: $white;
-    //         line-height: 1.8;
-    //         &::after {
-    //             content: "";
-    //             width: 30px;
-    //             position: absolute;
-    //             margin: 0 auto;
-    //             height: 2px;
-    //             background: $white;
-    //             left: 0;
-    //             right: 0;
-    //             bottom: 50px;
-    //         }
-    //     }
-    //     .overlay {
-    //         background-color: rgba(2, 2, 2, 0.8);
-    //     }
-    // }
+    .statistics {
+        background: url('../../images/cover/HeroImage.jpg') no-repeat center center fixed;
+        background-size: cover;
+        min-height: 300px;
+        color: $white;
+        padding: 0;
+        .overlay-background {
+            padding: 115px 0;
+            background: rgba(2, 2, 2, 0.8);
+            min-height: 300px;
+        }
+        span {
+            font-size: 40px;
+            color: $mainColor;
+        }
+        .title {
+            font-size: 45px;
+            color: $white;
+            line-height: 1.8;
+            &::after {
+                content: "";
+                width: 30px;
+                position: absolute;
+                margin: 0 auto;
+                height: 2px;
+                background: $white;
+                left: 0;
+                right: 0;
+                bottom: 50px;
+            }
+        }
+        .overlay {
+            background-color: rgba(2, 2, 2, 0.8);
+        }
+        @media #{$extraSmallDevices} {
+            .statistic {
+                padding-bottom: 30px;
+                .title {
+                    &::after {
+                        bottom: 80px;
+                    }
+                }
+            }
+        }
+    }
 
     /* ========== Our Team Section ========== */
-    // .our-team {
-    //     background-color: $whitesmoke;
-    // }
+    .our-team {
+        background-color: $whitesmoke;
+    }
 
     /* ========== Price Table Section ========== */
-    // .price-table {
-    //     .card {
-    //         border: none;
-    //         border-radius: 5px;
-    //         box-shadow: 0 5px 15px 0 rgba(110, 110, 110, .2);
-    //         max-width: 30.333333%;
-    //         margin-right: 3%;
-    //         -webkit-transition: all .3s ease-in-out;
-    //         -moz-transition: all .3s ease-in-out;
-    //         -o-transition: all .3s ease-in-out;
-    //         transition: all .3s ease-in-out;
-    //         h5,
-    //         h6,
-    //         ul > li {
-    //             margin-bottom: 30px;
-    //         }
-    //         .card-body {
-    //             .card-subtitle {
-    //                 font-size: 55px;
-    //                 font-weight: 600;
-    //             }
+    .price-table {
+        .card {
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px 0 rgba(110, 110, 110, .2);
+            max-width: 30.333333%;
+            margin-right: 3%;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            h5,
+            h6,
+            ul > li {
+                margin-bottom: 30px;
+            }
+            .card-body {
+                .card-subtitle {
+                    font-size: 55px;
+                    font-weight: 600;
+                }
 
-    //             ul > li {
-    //                 i {
-    //                     margin-right: 5px;
-    //                 }
-    //             }
-    //         }
-    //         &:hover {
-    //             background-color: $mainColor;
-    //             color: $white;
-    //             .title {
-    //                 color: $white;
-    //             }
-    //             .btn-card {
-    //                 background-color: $white;
-    //                 color: $mainColor;
-    //             }
-    //         }
-    //     }
-    // }
+                ul > li {
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+            }
+            &:hover {
+                background-color: $mainColor;
+                color: $white;
+                .title {
+                    color: $white;
+                }
+                .btn-card {
+                    background-color: $white;
+                    color: $mainColor;
+                }
+            }
+        }
+        @media #{$extraSmallDevices} {
+            .card {
+                max-width: 90%;
+                margin: 10px auto;
+            }
+        }
+    }
 
     /* ========== Price Testimonials Section ========== */
-    // .testimonials {
-    //     background: url('../../images/cover/HeroImage.jpg') no-repeat center center fixed;
-    //     .carousel {
-    //         .item {
-    //             color: $white;
-    //             font-size: 14px;
-    //             text-align: center;
-    //             overflow: hidden;
-    //             min-height: 290px;
+    .testimonials {
+        padding: 0;
+        .overlay-background {
+            padding: 60px 0;
+            background: rgba(2, 2, 2, 0.8);
+        }
+        background: url('../../images/cover/HeroImage.jpg') no-repeat center center fixed;
+        background-size: cover;
+        .carousel {
+            .item {
+                color: $white;
+                font-size: 14px;
+                text-align: center;
+                overflow: hidden;
+                min-height: 290px;
 
-    //             .paragraph {
-    //                 padding: 30px 0 10px;
-    //             }
-    //             .img-box {
-    //                 width: 100px;
-    //                 height: 100px;
-    //                 margin: 0 auto;
-    //                 padding: 5px;
-    //                 border: 1px solid $whitesmoke;
-    //                 border-radius: 50%;
-    //                 margin-bottom: 20px;
-    //                 img {
-    //                     border-radius: 50%;
-    //                 }
-    //             }
-    //             .overview {
-    //                 font-style: italic;
-    //                 b {
-    //                     text-transform: uppercase;
-	//                     color: $mainColor;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-
-    /* ========== Price Contact-US Section ========== */
-    // .contact-us {
-    //     text-align: start;
-
-    //     .heading {
-    //         text-align: center;
-    //     }
-
-    //     .sub-titles {
-    //         color: $darkgray;
-    //         font-weight: $font-weight-600;
-    //         font-size: 25px;
-    //         margin-bottom: 30px;
-    //     }
-
-    //     form {
-    //         .form-control {
-    //             border-radius: 0;
-    //         }
-    //         textarea {
-    //             max-width: 100%;
-    //             margin: 10px 0;
-    //         }
-    //     }
-
-    //     .details {
-    //         .paragraph {
-    //             line-height: 2.7;
-    //         }
-    //     }
-
-    //     .socilaMedia-icon {
-    //         > a {
-    //             color: $dimgray;
-    //             margin-right: 20px;
-    //             font-size: 20px;
-    //             &:hover {
-    //                 color: $mainColor
-    //             }
-    //         }
-    //     }
-    // }
+                .paragraph {
+                    padding: 30px 0 10px;
+                }
+                .img-box {
+                    width: 100px;
+                    height: 100px;
+                    margin: 0 auto;
+                    padding: 5px;
+                    border: 1px solid $whitesmoke;
+                    border-radius: 50%;
+                    margin-bottom: 20px;
+                    img {
+                        border-radius: 50%;
+                    }
+                }
+                .overview {
+                    font-style: italic;
+                    b {
+                        text-transform: uppercase;
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
 
     /* ========== Price Contact-US Section ========== */
-    // footer {
-    //     text-align: start;
-    //     .top-footer {
-    //         background-color: $dimgray;
-    //     }
-    //     .bottom-footer {
-    //         background-color: $darkgray;
-    //     }
-    // }
+    .contact-us {
+        text-align: start;
 
+        .heading {
+            text-align: center;
+        }
+
+        .sub-titles {
+            color: $darkgray;
+            font-weight: $font-weight-600;
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+
+        form {
+            .form-control {
+                border-radius: 0;
+            }
+            textarea {
+                max-width: 100%;
+                margin: 10px 0;
+            }
+        }
+
+        .details {
+            .paragraph {
+                line-height: 2.7;
+            }
+        }
+
+        .socilaMedia-icon {
+            > a {
+                color: $dimgray;
+                margin-right: 20px;
+                font-size: 20px;
+                &:hover {
+                    color: $mainColor
+                }
+            }
+        }
+        @media #{$extraSmallDevices} {
+            .touch {
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    /* ========== Price Contact-US Section ========== */
+    .main-footer {
+        text-align: start;
+        color: $white !important;
+        .top-footer {
+            background-color: $dimgray;
+            padding: 30px 0 20px 0;
+            .side-left {
+                margin-bottom: 40px;
+            }
+            .title {
+                color: $white;
+                padding-bottom: 10px;
+            }
+            .links {
+                color: $white;
+                line-height: 2.2;
+                &:hover {
+                    color: $mainColor;
+                }
+            }
+
+            .top-gallery {
+                margin-bottom: 10px;
+            }
+
+            .footer-form {
+                .form-control {
+                    background-color: $darkgray;
+                    color: $white;
+                    border-radius: 0;
+                    padding: 25px 10px;
+                }
+            }
+        }
+
+        .bottom-footer {
+            background-color: $darkgray;
+            color: $whitesmoke;
+            padding: 15px 0;
+            font-weight: 100;
+            .right {
+                text-align: end;
+                a {
+                    color: $whitesmoke;
+                    margin-right: 10px;
+                    &:hover {
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+
+        @media #{$extraSmallDevices} {
+            .gallary {
+                display: none;
+            }
+            .bottom-footer {
+                .left {
+                    flex: auto;
+                    max-width: 100%;
+                    text-align: center;
+                }
+                .right {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+
+// Scroll-top
+#scroll-top {
+    background-color: $mainColor;
+    color: $white;
+    font-size: 15px;
 }

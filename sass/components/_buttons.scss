@@ -38,3 +38,29 @@
         padding: 8px 20px;
     }
 }
+
+.hover-btn {
+    height: 40px;
+    width: 130px;
+    top: 40% !important;
+    left: 30% !important;
+    cursor: pointer;
+    &:hover {
+        background-color: $mainColor;
+        color: $white;
+        opacity: 1;
+    }
+}
+
+.btn-person-social {
+    position: static !important;
+    width: 35px;
+    height: 35px;
+    margin-top: 40%;
+    cursor: pointer;
+    &:hover {
+        background-color: $mainColor;
+        color: $white;
+        opacity: 1;
+    }
+}
