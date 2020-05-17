@@ -125,6 +125,7 @@ main {
   /* ========== services Section ========== */
   /* ========== portfolio Section ========== */
   /* ========== statistics Section ========== */
+  /* ========== Our Team Section ========== */
 }
 main > section {
   padding: 60px 0;
@@ -205,6 +206,9 @@ main .statistics .title {
 }
 main .statistics .overlay {
   background-color: rgba(2, 2, 2, 0.8);
+}
+main .our-team {
+  background-color: #F5F5F5;
 }
 
 /*# sourceMappingURL=style.css.map */
