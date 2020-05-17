@@ -142,6 +142,7 @@ main {
   /* ========== statistics Section ========== */
   /* ========== Our Team Section ========== */
   /* ========== Price Table Section ========== */
+  /* ========== Price Testimonials Section ========== */
 }
 main > section {
   padding: 60px 0;
@@ -220,6 +221,17 @@ main .statistics .title {
   color: #FFF;
   line-height: 1.8;
 }
+main .statistics .title::after {
+  content: "";
+  width: 30px;
+  position: absolute;
+  margin: 0 auto;
+  height: 2px;
+  background: #FFF;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+}
 main .statistics .overlay {
   background-color: rgba(2, 2, 2, 0.8);
 }
@@ -258,6 +270,38 @@ main .price-table .card:hover .title {
 }
 main .price-table .card:hover .btn-card {
   background-color: #FFF;
+  color: #EB586F;
+}
+main .testimonials {
+  background: url("../../images/cover/HeroImage.jpg") no-repeat center center fixed;
+}
+main .testimonials .carousel .item {
+  color: #FFF;
+  font-size: 14px;
+  text-align: center;
+  overflow: hidden;
+  min-height: 290px;
+}
+main .testimonials .carousel .item .paragraph {
+  padding: 30px 0 10px;
+}
+main .testimonials .carousel .item .img-box {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid #F5F5F5;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+main .testimonials .carousel .item .img-box img {
+  border-radius: 50%;
+}
+main .testimonials .carousel .item .overview {
+  font-style: italic;
+}
+main .testimonials .carousel .item .overview b {
+  text-transform: uppercase;
   color: #EB586F;
 }
 
