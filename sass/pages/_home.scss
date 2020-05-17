@@ -192,4 +192,47 @@ main {
         }
     }
 
+    /* ========== Price Contact-US Section ========== */
+    .contact-us {
+        text-align: start;
+
+        .heading {
+            text-align: center;
+        }
+
+        .sub-titles {
+            color: $darkgray;
+            font-weight: $font-weight-600;
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+
+        form {
+            .form-control {
+                border-radius: 0;
+            }
+            textarea {
+                max-width: 100%;
+                margin: 10px 0;
+            }
+        }
+
+        .details {
+            .paragraph {
+                line-height: 2.7;
+            }
+        }
+
+        .socilaMedia-icon {
+            > a {
+                color: $dimgray;
+                margin-right: 20px;
+                font-size: 20px;
+                &:hover {
+                    color: $mainColor
+                }
+            }
+        }
+    }
+
 }

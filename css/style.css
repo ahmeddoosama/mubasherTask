@@ -143,6 +143,7 @@ main {
   /* ========== Our Team Section ========== */
   /* ========== Price Table Section ========== */
   /* ========== Price Testimonials Section ========== */
+  /* ========== Price Contact-US Section ========== */
 }
 main > section {
   padding: 60px 0;
@@ -302,6 +303,36 @@ main .testimonials .carousel .item .overview {
 }
 main .testimonials .carousel .item .overview b {
   text-transform: uppercase;
+  color: #EB586F;
+}
+main .contact-us {
+  text-align: start;
+}
+main .contact-us .heading {
+  text-align: center;
+}
+main .contact-us .sub-titles {
+  color: #1D1D1D;
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+main .contact-us form .form-control {
+  border-radius: 0;
+}
+main .contact-us form textarea {
+  max-width: 100%;
+  margin: 10px 0;
+}
+main .contact-us .details .paragraph {
+  line-height: 2.7;
+}
+main .contact-us .socilaMedia-icon > a {
+  color: #282828;
+  margin-right: 20px;
+  font-size: 20px;
+}
+main .contact-us .socilaMedia-icon > a:hover {
   color: #EB586F;
 }
 
