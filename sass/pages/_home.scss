@@ -19,11 +19,12 @@ main {
     }
 
     /* ========== services Section ========== */
-    .our-services {
-        .service-card {
+    .our-services,
+    .feature {
+        .cards {
             text-align: start;
             position: relative;
-            .services-icon {
+            .icons {
                 position: absolute;
                 font-size: 25px;
                 color: $mainColor;

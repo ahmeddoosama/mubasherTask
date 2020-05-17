@@ -136,16 +136,19 @@ main .about img {
   height: 90px;
   margin-bottom: 20px;
 }
-main .our-services .service-card {
+main .our-services .cards,
+main .feature .cards {
   text-align: start;
   position: relative;
 }
-main .our-services .service-card .services-icon {
+main .our-services .cards .icons,
+main .feature .cards .icons {
   position: absolute;
   font-size: 25px;
   color: #EB586F;
 }
-main .our-services .service-card .content {
+main .our-services .cards .content,
+main .feature .cards .content {
   margin-left: 40px;
 }
 main .portfolio {
