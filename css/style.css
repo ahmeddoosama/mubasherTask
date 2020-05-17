@@ -124,6 +124,7 @@ main {
   /* ========== About Section ========== */
   /* ========== services Section ========== */
   /* ========== portfolio Section ========== */
+  /* ========== statistics Section ========== */
 }
 main > section {
   padding: 60px 0;
@@ -185,6 +186,25 @@ main .portfolio .shuffle-images .row .col-md {
 main .portfolio .shuffle-images .row .col-md img {
   height: 280px;
   width: 100%;
+}
+main .statistics {
+  background: url("../../images/cover/HeroImage.jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 300px;
+  padding: 115px 0;
+  color: #FFF;
+}
+main .statistics span {
+  font-size: 40px;
+  color: #EB586F;
+}
+main .statistics .title {
+  font-size: 45px;
+  color: #FFF;
+  line-height: 1.8;
+}
+main .statistics .overlay {
+  background-color: rgba(2, 2, 2, 0.8);
 }
 
 /*# sourceMappingURL=style.css.map */

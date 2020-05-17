@@ -74,4 +74,25 @@ main {
             }
         }
     }
+
+    /* ========== statistics Section ========== */
+    .statistics {
+        background: url('../../images/cover/HeroImage.jpg') no-repeat center center fixed;
+        background-size: cover;
+        min-height: 300px;
+        padding: 115px 0;
+        color: $white;
+        span {
+            font-size: 40px;
+            color: $mainColor;
+        }
+        .title {
+            font-size: 45px;
+            color: $white;
+            line-height: 1.8;
+        }
+        .overlay {
+            background-color: rgba(2, 2, 2, 0.8);
+        }
+    }
 }
