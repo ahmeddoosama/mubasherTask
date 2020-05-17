@@ -26,4 +26,15 @@
 .btn-down {
     margin-top: 20px;
     padding: $padding-btn-down;
+    // Small Devices
+    @media #{$extraSmall} {
+        margin-top: 0;
+        padding: 4px 7px;
+        font-size: 12px;
+    }
+
+    @media #{$mediumScreen} {
+        margin-top: 5px;
+        padding: 8px 20px;
+    }
 }

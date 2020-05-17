@@ -16,4 +16,38 @@
             }
         }
     }
+    // Small Devices
+    @media #{$extraSmall} {
+        position: relative;
+        top: 54px;
+        margin-bottom: 25px;
+        .carousel {
+            .carousel-item {
+                .carousel-caption {
+                    top: 0;
+                    h1 {
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 9px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media #{$mediumScreen} {
+        .carousel {
+            .carousel-item {
+                .carousel-caption {
+                    h1 {
+                        font-size: 35px;
+                    }
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
 }

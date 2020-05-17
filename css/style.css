@@ -3,6 +3,11 @@ Name: 			style.scss
 Written by: 	Ahmed Osama Bedawy - (https://github.com/ahmeddoosama)
 */
 /* Colors */
+/*
+*
+*** Media Quariy
+*
+*/
 /* Colors */
 html {
   box-sizing: border-box;
@@ -70,6 +75,11 @@ img {
 }
 
 /* Colors */
+/*
+*
+*** Media Quariy
+*
+*/
 /* Colors */
 .btn {
   color: #EB586F;
@@ -92,13 +102,31 @@ img {
   margin-top: 20px;
   padding: 9px 30px;
 }
+@media only screen and (max-width: 600px) {
+  .btn-down {
+    margin-top: 0;
+    padding: 4px 7px;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .btn-down {
+    margin-top: 5px;
+    padding: 8px 20px;
+  }
+}
 
 /* ========== Contain navbar style ========== */
 /* Colors */
+/*
+*
+*** Media Quariy
+*
+*/
 /* Colors */
 /* ========== Navbar ========== */
 .main-nav {
-  position: fixed;
+  position: absolute;
   right: 0;
   left: 0;
   z-index: 1030;
@@ -118,9 +146,24 @@ img {
 .main-nav .navbar-collapse .navbar-nav .nav-link:hover, .main-nav .navbar-collapse .navbar-nav .nav-link:focus {
   color: #EB586F;
 }
+@media only screen and (max-width: 600px) {
+  .main-nav {
+    background-color: #282828;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main-nav {
+    background-color: #282828;
+  }
+}
 
 /* ========== Contain navbar style ========== */
 /* Colors */
+/*
+*
+*** Media Quariy
+*
+*/
 /* Colors */
 /* ========== Header ========== */
 .main-header .carousel .carousel-item .carousel-caption {
@@ -131,9 +174,38 @@ img {
   font-size: 55px;
   line-height: 1.9;
 }
+@media only screen and (max-width: 600px) {
+  .main-header {
+    position: relative;
+    top: 54px;
+    margin-bottom: 25px;
+  }
+  .main-header .carousel .carousel-item .carousel-caption {
+    top: 0;
+  }
+  .main-header .carousel .carousel-item .carousel-caption h1 {
+    font-size: 20px;
+  }
+  .main-header .carousel .carousel-item .carousel-caption p {
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main-header .carousel .carousel-item .carousel-caption h1 {
+    font-size: 35px;
+  }
+  .main-header .carousel .carousel-item .carousel-caption p {
+    font-size: 15px;
+  }
+}
 
 /* ========== Contain Home style ========== */
 /* Colors */
+/*
+*
+*** Media Quariy
+*
+*/
 /* Colors */
 main {
   /* ========== About Section ========== */
@@ -143,6 +215,7 @@ main {
   /* ========== Our Team Section ========== */
   /* ========== Price Table Section ========== */
   /* ========== Price Testimonials Section ========== */
+  /* ========== Price Contact-US Section ========== */
   /* ========== Price Contact-US Section ========== */
 }
 main > section {
@@ -155,185 +228,6 @@ main .about {
 main .about img {
   height: 90px;
   margin-bottom: 20px;
-}
-main .our-services .cards,
-main .feature .cards {
-  text-align: start;
-  position: relative;
-}
-main .our-services .cards .icons,
-main .feature .cards .icons {
-  position: absolute;
-  font-size: 25px;
-  color: #EB586F;
-}
-main .our-services .cards .content,
-main .feature .cards .content {
-  margin-left: 40px;
-}
-main .portfolio {
-  background-color: #F5F5F5;
-}
-main .portfolio .portfolio-nav {
-  margin-top: 40px;
-  margin-bottom: 50px;
-}
-main .portfolio .portfolio-nav .portfolio-nav-item {
-  border: 2px solid #EB586F;
-  cursor: pointer;
-  margin-left: 10px;
-  padding: 5px 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-main .portfolio .portfolio-nav .portfolio-nav-item:active, main .portfolio .portfolio-nav .portfolio-nav-item:hover {
-  background-color: #EB586F;
-  color: #FFF;
-}
-main .portfolio .shuffle-images .row {
-  margin: 0;
-}
-main .portfolio .shuffle-images .row .col-md {
-  padding: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-main .portfolio .shuffle-images .row .col-md img {
-  height: 280px;
-  width: 100%;
-}
-main .statistics {
-  background: url("../../images/cover/HeroImage.jpg") no-repeat center center fixed;
-  background-size: cover;
-  min-height: 300px;
-  padding: 115px 0;
-  color: #FFF;
-}
-main .statistics span {
-  font-size: 40px;
-  color: #EB586F;
-}
-main .statistics .title {
-  font-size: 45px;
-  color: #FFF;
-  line-height: 1.8;
-}
-main .statistics .title::after {
-  content: "";
-  width: 30px;
-  position: absolute;
-  margin: 0 auto;
-  height: 2px;
-  background: #FFF;
-  left: 0;
-  right: 0;
-  bottom: 50px;
-}
-main .statistics .overlay {
-  background-color: rgba(2, 2, 2, 0.8);
-}
-main .our-team {
-  background-color: #F5F5F5;
-}
-main .price-table .card {
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 5px 15px 0 rgba(110, 110, 110, 0.2);
-  max-width: 30.333333%;
-  margin-right: 3%;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-main .price-table .card h5,
-main .price-table .card h6,
-main .price-table .card ul > li {
-  margin-bottom: 30px;
-}
-main .price-table .card .card-body .card-subtitle {
-  font-size: 55px;
-  font-weight: 600;
-}
-main .price-table .card .card-body ul > li i {
-  margin-right: 5px;
-}
-main .price-table .card:hover {
-  background-color: #EB586F;
-  color: #FFF;
-}
-main .price-table .card:hover .title {
-  color: #FFF;
-}
-main .price-table .card:hover .btn-card {
-  background-color: #FFF;
-  color: #EB586F;
-}
-main .testimonials {
-  background: url("../../images/cover/HeroImage.jpg") no-repeat center center fixed;
-}
-main .testimonials .carousel .item {
-  color: #FFF;
-  font-size: 14px;
-  text-align: center;
-  overflow: hidden;
-  min-height: 290px;
-}
-main .testimonials .carousel .item .paragraph {
-  padding: 30px 0 10px;
-}
-main .testimonials .carousel .item .img-box {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-  padding: 5px;
-  border: 1px solid #F5F5F5;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-main .testimonials .carousel .item .img-box img {
-  border-radius: 50%;
-}
-main .testimonials .carousel .item .overview {
-  font-style: italic;
-}
-main .testimonials .carousel .item .overview b {
-  text-transform: uppercase;
-  color: #EB586F;
-}
-main .contact-us {
-  text-align: start;
-}
-main .contact-us .heading {
-  text-align: center;
-}
-main .contact-us .sub-titles {
-  color: #1D1D1D;
-  font-weight: 600;
-  font-size: 25px;
-  margin-bottom: 30px;
-}
-main .contact-us form .form-control {
-  border-radius: 0;
-}
-main .contact-us form textarea {
-  max-width: 100%;
-  margin: 10px 0;
-}
-main .contact-us .details .paragraph {
-  line-height: 2.7;
-}
-main .contact-us .socilaMedia-icon > a {
-  color: #282828;
-  margin-right: 20px;
-  font-size: 20px;
-}
-main .contact-us .socilaMedia-icon > a:hover {
-  color: #EB586F;
 }
 
 /*# sourceMappingURL=style.css.map */

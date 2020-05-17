@@ -4,7 +4,7 @@
 
 /* ========== Navbar ========== */
 .main-nav {
-    position: fixed;
+    position: absolute;
     right: 0;
     left: 0;
     z-index: 1030;
@@ -27,4 +27,16 @@
             }
         }
     }
+
+    
+    // Small Devices
+    @media #{$extraSmall} {
+        background-color: $dimgray;
+    }
+
+    // Medium Devices
+    @media #{$mediumScreen} {
+        background-color: $dimgray;
+    }
+    
 }

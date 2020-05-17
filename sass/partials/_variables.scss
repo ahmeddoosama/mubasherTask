@@ -36,3 +36,13 @@ $transition-btn:all 0.3s ease-in-out;
 
 // Sections
 $padding-all-section: 60px 0;
+
+/*
+*
+*** Media Quariy
+*
+*/
+$extraSmall: "only screen and (max-width: 600px)"; // EX >> @media #{$mobileRules}
+$smallScreen: "only screen and (min-width: 600px) ";
+$mediumScreen: "only screen and (max-width: 768px)";
+$largeScreen: "only screen and (min-width: 992px)";
