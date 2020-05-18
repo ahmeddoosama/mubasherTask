@@ -1,5 +1,6 @@
-$(function (){
-    'use strict'; 
+/*global $, jQuery, alert*/
+$(function () {
+    'use strict';
 
     // Featured Work Shuffle
     $('.portfolio ul li').on('click', function () {
@@ -16,19 +17,14 @@ $(function (){
     var scrollButton = $("#scroll-top");
 
     $(window).scroll(function () {
-        if ($(this).scrollTop() >= 200)
-        {
-            scrollButton.show();
-        }
-        else
-        {
-            scrollButton.hide();
-        }
+        if ($(this).scrollTop() >= 200) scrollButton.show();
+        else scrollButton.hide();
     });
 
     // Click On Button To Scroll Top
-
-    scrollButton.click(function () {
-        $("html,body").animate({scrollTop: 0 }, 600);
+    scrollButton.on('click', function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 600);
     });
-});
+})

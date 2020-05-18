@@ -561,10 +561,28 @@ main .main-footer .bottom-footer .right a:hover {
   main .main-footer .bottom-footer .left {
     flex: auto;
     max-width: 100%;
+    text-align: center;
   }
   main .main-footer .bottom-footer .right {
     display: none;
   }
+}
+
+#scroll-top {
+  background-color: #EB586F;
+  color: #FFF;
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  border-radius: 50%;
+  padding-top: 4px;
+  cursor: pointer;
+  bottom: 10px;
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

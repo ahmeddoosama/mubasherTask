@@ -371,4 +371,15 @@ main {
     background-color: $mainColor;
     color: $white;
     font-size: 15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    border-radius: 50%;
+    padding-top: 4px;
+    cursor: pointer;
+    bottom: 10px;
+    display: none;
 }
