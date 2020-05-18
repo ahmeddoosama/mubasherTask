@@ -84,6 +84,102 @@ img {
   background-color: #282828 !important;
 }
 
+#scroll-top {
+  background-color: #e90c59;
+  color: #FFF;
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  border-radius: 50%;
+  padding-top: 4px;
+  cursor: pointer;
+  bottom: 10px;
+  display: none;
+  opacity: 0.8;
+}
+
+@keyframes preloader-o {
+  0% {
+    opacity: 1;
+    transform: translate(0 0);
+  }
+  49.99% {
+    opacity: 1;
+    transform: translate(24px, 0);
+  }
+  50% {
+    opacity: 0;
+    transform: translate(24px, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+}
+@keyframes preloader {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(24px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.preloader div {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  top: 38px;
+  left: 26px;
+}
+
+.preloader div:nth-child(1) {
+  background: #e90c59;
+  animation: preloader 1s linear infinite;
+  animation-delay: -0.5s;
+}
+
+.preloader div:nth-child(2) {
+  background: #FFF;
+  animation: preloader 1s linear infinite;
+  animation-delay: 0s;
+}
+
+.preloader div:nth-child(3) {
+  background: #e90c59;
+  animation: preloader-o 1s linear infinite;
+  animation-delay: -0.5s;
+}
+
+.loader {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  position: fixed;
+  background-color: #1D1D1D;
+}
+
+.preloader {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translateZ(0) scale(0.84);
+  transform-origin: 0 0;
+}
+
+.preloader div {
+  box-sizing: content-box;
+}
+
 /* Colors */
 /*
 *
@@ -92,7 +188,7 @@ img {
 */
 /* Colors */
 .btn {
-  color: #EB586F;
+  color: #e90c59;
   background-color: unset;
   border-radius: 0;
   width: auto;
@@ -101,10 +197,10 @@ img {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border: 1px solid #EB586F;
+  border: 1px solid #e90c59;
 }
 .btn:hover {
-  color: #EB586F;
+  color: #e90c59;
   opacity: 0.5;
 }
 
@@ -134,7 +230,7 @@ img {
   cursor: pointer;
 }
 .hover-btn:hover {
-  background-color: #EB586F;
+  background-color: #e90c59;
   color: #FFF;
   opacity: 1;
 }
@@ -147,7 +243,7 @@ img {
   cursor: pointer;
 }
 .btn-person-social:hover {
-  background-color: #EB586F;
+  background-color: #e90c59;
   color: #FFF;
   opacity: 1;
 }
@@ -168,19 +264,19 @@ img {
   z-index: 1030;
 }
 .main-nav .navbar-brand {
-  color: #EB586F;
+  color: #e90c59;
 }
 .main-nav .navbar-collapse {
   flex-grow: 0;
 }
 .main-nav .navbar-collapse .navbar-nav .active .nav-link {
-  color: #EB586F;
+  color: #e90c59;
 }
 .main-nav .navbar-collapse .navbar-nav .nav-link {
   color: #FFF;
 }
 .main-nav .navbar-collapse .navbar-nav .nav-link:hover, .main-nav .navbar-collapse .navbar-nav .nav-link:focus {
-  color: #EB586F;
+  color: #e90c59;
 }
 @media only screen and (max-width: 600px) {
   .main-nav {
@@ -291,7 +387,7 @@ main .our-services .cards .icons,
 main .feature .cards .icons {
   position: absolute;
   font-size: 25px;
-  color: #EB586F;
+  color: #e90c59;
 }
 main .our-services .cards .content,
 main .feature .cards .content {
@@ -321,7 +417,7 @@ main .portfolio .portfolio-nav {
   margin-bottom: 50px;
 }
 main .portfolio .portfolio-nav .portfolio-nav-item {
-  border: 2px solid #EB586F;
+  border: 2px solid #e90c59;
   cursor: pointer;
   margin-left: 10px;
   padding: 5px 0;
@@ -331,7 +427,7 @@ main .portfolio .portfolio-nav .portfolio-nav-item {
   transition: all 0.3s ease-in-out;
 }
 main .portfolio .portfolio-nav .portfolio-nav-item:active, main .portfolio .portfolio-nav .portfolio-nav-item:hover {
-  background-color: #EB586F;
+  background-color: #e90c59;
   color: #FFF;
 }
 main .portfolio .shuffle-images .row {
@@ -362,7 +458,7 @@ main .statistics .overlay-background {
 }
 main .statistics span {
   font-size: 40px;
-  color: #EB586F;
+  color: #e90c59;
 }
 main .statistics .title {
   font-size: 45px;
@@ -418,7 +514,7 @@ main .price-table .card .card-body ul > li i {
   margin-right: 5px;
 }
 main .price-table .card:hover {
-  background-color: #EB586F;
+  background-color: #e90c59;
   color: #FFF;
 }
 main .price-table .card:hover .title {
@@ -426,7 +522,7 @@ main .price-table .card:hover .title {
 }
 main .price-table .card:hover .btn-card {
   background-color: #FFF;
-  color: #EB586F;
+  color: #e90c59;
 }
 @media only screen and (max-width: 600px) {
   main .price-table .card {
@@ -470,7 +566,7 @@ main .testimonials .carousel .item .overview {
 }
 main .testimonials .carousel .item .overview b {
   text-transform: uppercase;
-  color: #EB586F;
+  color: #e90c59;
 }
 main .contact-us {
   text-align: start;
@@ -500,7 +596,7 @@ main .contact-us .socilaMedia-icon > a {
   font-size: 20px;
 }
 main .contact-us .socilaMedia-icon > a:hover {
-  color: #EB586F;
+  color: #e90c59;
 }
 @media only screen and (max-width: 600px) {
   main .contact-us .touch {
@@ -527,7 +623,7 @@ main .main-footer .top-footer .links {
   line-height: 2.2;
 }
 main .main-footer .top-footer .links:hover {
-  color: #EB586F;
+  color: #e90c59;
 }
 main .main-footer .top-footer .top-gallery {
   margin-bottom: 10px;
@@ -552,7 +648,7 @@ main .main-footer .bottom-footer .right a {
   margin-right: 10px;
 }
 main .main-footer .bottom-footer .right a:hover {
-  color: #EB586F;
+  color: #e90c59;
 }
 @media only screen and (max-width: 600px) {
   main .main-footer .gallary {
@@ -566,23 +662,6 @@ main .main-footer .bottom-footer .right a:hover {
   main .main-footer .bottom-footer .right {
     display: none;
   }
-}
-
-#scroll-top {
-  background-color: #EB586F;
-  color: #FFF;
-  font-size: 15px;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  position: fixed;
-  z-index: 999;
-  right: 20px;
-  border-radius: 50%;
-  padding-top: 4px;
-  cursor: pointer;
-  bottom: 10px;
-  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

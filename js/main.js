@@ -2,6 +2,27 @@
 $(function () {
     'use strict';
 
+    $(window).on('load', function () {
+        $(".loader").delay(600).fadeOut();
+    });
+
+    $('body').scrollspy({
+        target: '#nav',
+        offset: $(window).height() / 2
+    });
+
+    $("#nav .navbar-nav a[href^='#']").on('click', function (e) {
+        e.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 600);
+    });
+
+    $("#nav .navbar-nav a[href^='#']").on('click', function (){
+        $("#nav").toggleClass('open');
+    })
+
     // Featured Work Shuffle
     $('.portfolio ul li').on('click', function () {
         $(this).addClass('active').siblings().removeClass('active');

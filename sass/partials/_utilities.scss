@@ -73,13 +73,118 @@ img {
 }
 
 // Animate
-[class^='imghvr-'], 
+[class^='imghvr-'],
 [class*=' imghvr-'] {
-  background-color: $gray;
+    background-color: $gray;
 }
 
-[class^='imghvr-'] figcaption, 
-[class*=' imghvr-'] figcaption  {
-  background-color: $dimgray !important;
+[class^='imghvr-'] figcaption,
+[class*=' imghvr-'] figcaption {
+    background-color: $dimgray !important;
 }
 
+// Scroll-top
+#scroll-top {
+    background-color: $mainColor;
+    color: $white;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    border-radius: 50%;
+    padding-top: 4px;
+    cursor: pointer;
+    bottom: 10px;
+    display: none;
+    opacity: 0.8;
+}
+
+
+// Loading Page
+@keyframes preloader-o {
+    0% {
+        opacity: 1;
+        transform: translate(0 0)
+    }
+
+    49.99% {
+        opacity: 1;
+        transform: translate(24px, 0)
+    }
+
+    50% {
+        opacity: 0;
+        transform: translate(24px, 0)
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(0, 0)
+    }
+}
+
+@keyframes preloader {
+    0% {
+        transform: translate(0, 0)
+    }
+
+    50% {
+        transform: translate(24px, 0)
+    }
+
+    100% {
+        transform: translate(0, 0)
+    }
+}
+
+.preloader div {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    top: 38px;
+    left: 26px;
+}
+
+.preloader div:nth-child(1) {
+    background: $mainColor;
+    animation: preloader 1s linear infinite;
+    animation-delay: -0.5s;
+}
+
+.preloader div:nth-child(2) {
+    background: $white;
+    animation: preloader 1s linear infinite;
+    animation-delay: 0s;
+}
+
+.preloader div:nth-child(3) {
+    background: $mainColor;
+    animation: preloader-o 1s linear infinite;
+    animation-delay: -0.5s;
+}
+
+.loader {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    position: fixed;
+    background-color: $darkgray;
+}
+
+.preloader {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translateZ(0) scale(0.84);
+    transform-origin: 0 0;
+}
+
+.preloader div {
+    box-sizing: content-box;
+}
