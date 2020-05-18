@@ -445,7 +445,7 @@ main .portfolio .shuffle-images .row .col-md img {
   width: 100%;
 }
 main .statistics {
-  background: url("../../images/cover/HeroImage.jpg") no-repeat center center fixed;
+  background: url("../images/cover/HeroImage.jpg") no-repeat center center fixed;
   background-size: cover;
   min-height: 300px;
   color: #FFF;
@@ -532,7 +532,7 @@ main .price-table .card:hover .btn-card {
 }
 main .testimonials {
   padding: 0;
-  background: url("../../images/cover/HeroImage.jpg") no-repeat center center fixed;
+  background: url("../images/cover/HeroImage.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 main .testimonials .overlay-background {
